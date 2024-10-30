@@ -36,13 +36,7 @@ public class BookController {
     public ResponseEntity<Book> getBookByIsbn(@PathVariable String isbn)
     {
         Book book = bookService.findByIsbn(isbn);
-        return  ResponseEntity.ok(book);
-
-        /*if (book != null) {
-            return ResponseEntity.ok(book);
-        } else {
-            return ResponseEntity.notFound().build();
-        }*/
+        return ResponseEntity.ok(book);
     }
 
     // Retrieve a specific book by ID

@@ -1,6 +1,7 @@
 package Services;
 
 
+import ExecptionAndValidationHandler.ResourceAlreadyExistsException;
 import ExecptionAndValidationHandler.ResourceNotFoundException;
 import IRopositries.*;
 import Entities.*;
@@ -47,7 +48,7 @@ public class BookService {
         }
         else
         {
-            throw (new ResourceNotFoundException("Book with Same ISBN found !"));
+            throw (new ResourceAlreadyExistsException("Book with Same ISBN found !"));
         }
     }
     @Transactional
