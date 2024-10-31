@@ -42,12 +42,11 @@ public class PatronService {
                 })
                 .orElseThrow(() -> new ResourceNotFoundException("Patron not found with id " + id));
     }
-    public boolean deletePatron(Long id)
+    public void deletePatron(Long id)
     {
         if (IPatronRepository.existsById(id))
         {
             IPatronRepository.deleteById(id);
-            return true;
         }
         else
         {
