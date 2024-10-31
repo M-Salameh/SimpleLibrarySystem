@@ -1,0 +1,19 @@
+2024-10-31 13:07:50 - Starting LibrarySystemApplicationTests using Java 17.0.5 with PID 9856 (started by Mr_Salameh in D:\Maids\LibraryProject\LibrarySystem)
+2024-10-31 13:07:50 - No active profile set, falling back to 1 default profile: "default"
+2024-10-31 13:07:51 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-31 13:07:51 - Finished Spring Data repository scanning in 18 ms. Found 0 JPA repository interfaces.
+2024-10-31 13:07:51 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-31 13:07:51 - HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-10-31 13:07:51 - HHH000026: Second-level cache disabled
+2024-10-31 13:07:52 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-31 13:07:52 - HikariPool-1 - Starting...
+2024-10-31 13:07:52 - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-10-31 13:07:52 - HikariPool-1 - Start completed.
+2024-10-31 13:07:52 - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-10-31 13:07:52 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-10-31 13:07:52 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-31 13:07:53 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-31 13:07:53 - Started LibrarySystemApplicationTests in 4.187 seconds (process running for 7.543)
+2024-10-31 13:07:53 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-31 13:07:53 - HikariPool-1 - Shutdown initiated...
+2024-10-31 13:07:53 - HikariPool-1 - Shutdown completed.
