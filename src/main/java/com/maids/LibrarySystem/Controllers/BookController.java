@@ -1,9 +1,8 @@
-package Controllers;
+package com.maids.LibrarySystem.Controllers;
 
 
-import Entities.Book;
-import IRopositries.IBookRepository;
-import Services.BookService;
+import com.maids.LibrarySystem.Entities.Book;
+import com.maids.LibrarySystem.Services.BookService;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.annotation.CacheEvict;
@@ -23,20 +22,19 @@ import java.util.List;
 public class BookController {
 
     @Autowired
-    private IBookRepository bookRepository;
-    @Autowired
     private BookService bookService;
 
     // Retrieve all books
     @GetMapping
-    //@Cacheable(value = "All-Books")
+   // @Cacheable(value = "All-Books")
     public List<Book> getAllBooks() {
-        return bookRepository.findAll();
+
+        return bookService.findAll();
     }
 
     // Get a book by its ISBN
     @GetMapping("/isbn/{isbn}")
-    //@Cacheable(value = "Books-by-ISBN" , key = "#isbn")
+   // @Cacheable(value = "Books-by-ISBN" , key = "#isbn")
     public ResponseEntity<Book> getBookByIsbn(@PathVariable String isbn)
     {
         Book book = bookService.findByIsbn(isbn);
@@ -55,7 +53,8 @@ public class BookController {
     // Add a new book
     @PostMapping
     //@CacheEvict(value = "All-Books" , allEntries = true)
-    public Book createBook(@Valid @RequestBody Book book) {
+    public Book createBook(@Valid @RequestBody Book book)
+    {
         return bookService.createBook(book);
     }
 
@@ -71,7 +70,10 @@ public class BookController {
     // Remove a book
     @DeleteMapping("/{id}")
     //@CacheEvict(value = {"All-Books" , "Books-by-ID" , "Books-by-ISBN"} , allEntries = true)
-    public ResponseEntity<Void> deleteBook(@PathVariable Long id) {
+    public ResponseEntity<Void> deleteBook(@PathVariable Long id)
+    {
+
+        System.out.println("New Request in Deleting");
         bookService.deleteBookById(id);
         return ResponseEntity.noContent().build();
     }

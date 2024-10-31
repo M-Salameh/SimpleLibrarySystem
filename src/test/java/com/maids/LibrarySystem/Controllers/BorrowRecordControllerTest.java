@@ -1,13 +1,12 @@
 package com.maids.LibrarySystem.Controllers;
 
-import Controllers.BorrowRecordController;
-import Entities.Book;
-import Entities.BorrowRecord;
-import Entities.Patron;
-import IRopositries.IBorrowRecordRepository;
-import IRopositries.IBookRepository;
-import IRopositries.IPatronRepository;
-import Services.BorrowService;
+import com.maids.LibrarySystem.Entities.Book;
+import com.maids.LibrarySystem.Entities.BorrowRecord;
+import com.maids.LibrarySystem.Entities.Patron;
+import com.maids.LibrarySystem.IRepositries.IBorrowRecordRepository;
+import com.maids.LibrarySystem.IRepositries.IBookRepository;
+import com.maids.LibrarySystem.IRepositries.IPatronRepository;
+import com.maids.LibrarySystem.Services.BorrowService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;

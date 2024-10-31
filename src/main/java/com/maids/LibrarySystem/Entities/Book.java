@@ -1,13 +1,15 @@
-package Entities;
+package com.maids.LibrarySystem.Entities;
 
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.*;
+import lombok.Data;
 
 import java.time.LocalDate;
 
 
 @Entity
+@Data
 public class Book {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -76,4 +78,5 @@ public class Book {
     public void setRentPricePerDay(double rentPricePerDay) {
         this.rentPricePerDay = rentPricePerDay;
     }
+
 }

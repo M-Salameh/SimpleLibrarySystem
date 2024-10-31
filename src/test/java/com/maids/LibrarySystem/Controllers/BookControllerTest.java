@@ -1,9 +1,8 @@
 package com.maids.LibrarySystem.Controllers;
 
-import Controllers.BookController;
-import Entities.Book;
-import IRopositries.IBookRepository;
-import Services.BookService;
+import com.maids.LibrarySystem.Entities.Book;
+import com.maids.LibrarySystem.IRepositries.IBookRepository;
+import com.maids.LibrarySystem.Services.BookService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;
@@ -14,7 +13,6 @@ import org.springframework.http.ResponseEntity;
 import java.time.LocalDate;
 import java.util.Arrays;
 import java.util.List;
-import java.util.Optional;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.mockito.Mockito.*;

@@ -1,4 +1,4 @@
-package Entities;
+package com.maids.LibrarySystem.Entities;
 
 
 import jakarta.persistence.*;

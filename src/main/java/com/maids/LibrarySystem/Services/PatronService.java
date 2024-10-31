@@ -1,11 +1,10 @@
-package Services;
+package com.maids.LibrarySystem.Services;
 
 
-import ExecptionAndValidationHandler.ResourceAlreadyExistsException;
-import ExecptionAndValidationHandler.ResourceNotFoundException;
-import IRopositries.*;
-import Entities.*;
+import com.maids.LibrarySystem.ExecptionAndValidationHandler.ResourceNotFoundException;
 
+
+import com.maids.LibrarySystem.Entities.Patron;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -14,7 +13,7 @@ import org.springframework.transaction.annotation.Transactional;
 @Service
 public class PatronService {
     @Autowired
-    private IPatronRepository IPatronRepository;
+    private com.maids.LibrarySystem.IRepositries.IPatronRepository IPatronRepository;
 
 
     public Patron getPatronById(Long patronId) {

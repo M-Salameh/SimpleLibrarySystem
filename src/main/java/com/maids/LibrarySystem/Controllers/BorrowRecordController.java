@@ -1,18 +1,18 @@
-package Controllers;
+package com.maids.LibrarySystem.Controllers;
 
 
-import Entities.BorrowRecord;
-import IRopositries.*;
-import Services.BorrowService;
+import com.maids.LibrarySystem.Entities.BorrowRecord;
+import com.maids.LibrarySystem.Services.BorrowService;
+import com.maids.LibrarySystem.IRepositries.IBookRepository;
+import com.maids.LibrarySystem.IRepositries.IBorrowRecordRepository;
+import com.maids.LibrarySystem.IRepositries.IPatronRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.time.LocalDate;
-
 @RestController
-@RequestMapping("/api")
+@RequestMapping("/api/yt/")
 public class BorrowRecordController 
 {
 

@@ -1,0 +1,18 @@
+Body of Post When Creating or Updating Book:
+
+{
+  "isbn": "1111",
+  "title": "titl2e",
+  "author": "auth2or",
+  "dateOfPublish": "2023-11-11",
+  "rentPricePerDay": 10
+}
+
+
+
+Body of Post When Creating or Updating Patron:
+{
+    "name": "Patron1",
+    "email": "patron1@gmail.com",
+    "address": "NY,USA"
+}

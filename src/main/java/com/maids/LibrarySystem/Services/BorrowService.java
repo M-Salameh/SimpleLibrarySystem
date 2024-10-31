@@ -1,10 +1,12 @@
-package Services;
+package com.maids.LibrarySystem.Services;
 
 
-import ExecptionAndValidationHandler.ResourceNotFoundException;
-import IRopositries.*;
-import Entities.*;
+import com.maids.LibrarySystem.ExecptionAndValidationHandler.ResourceNotFoundException;
 
+
+import com.maids.LibrarySystem.Entities.Book;
+import com.maids.LibrarySystem.Entities.BorrowRecord;
+import com.maids.LibrarySystem.Entities.Patron;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -15,13 +17,13 @@ import java.time.LocalDate;
 public class BorrowService {
 
     @Autowired
-    private IBorrowRecordRepository IBorrowRecordRepository;
+    private com.maids.LibrarySystem.IRepositries.IBorrowRecordRepository IBorrowRecordRepository;
 
     @Autowired
-    private IBookRepository IBookRepository;
+    private com.maids.LibrarySystem.IRepositries.IBookRepository IBookRepository;
 
     @Autowired
-    private IPatronRepository IPatronRepository;
+    private com.maids.LibrarySystem.IRepositries.IPatronRepository IPatronRepository;
 
     @Transactional
     public BorrowRecord borrowBook(Long patronId, Long bookId) {
@@ -61,7 +63,7 @@ public class BorrowService {
         borrowRecord.setEndDate(LocalDate.now());
         long daysBorrowed = java.time.temporal.ChronoUnit.DAYS.between(borrowRecord.getStartDate(), borrowRecord.getEndDate());
         double rentalPricePerDay = book.getRentPricePerDay();
-        double totalCost = daysBorrowed * rentalPricePerDay;
+        double totalCost = (1+daysBorrowed) * rentalPricePerDay;
         borrowRecord.setReceipt(totalCost);
         return IBorrowRecordRepository.save(borrowRecord);
     }

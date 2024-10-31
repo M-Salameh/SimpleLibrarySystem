@@ -1,23 +1,23 @@
-package Services;
+package com.maids.LibrarySystem.Services;
 
 
-import ExecptionAndValidationHandler.ResourceAlreadyExistsException;
-import ExecptionAndValidationHandler.ResourceNotFoundException;
-import IRopositries.*;
-import Entities.*;
+import com.maids.LibrarySystem.ExecptionAndValidationHandler.ResourceAlreadyExistsException;
+import com.maids.LibrarySystem.ExecptionAndValidationHandler.ResourceNotFoundException;
 
+
+import com.maids.LibrarySystem.Entities.Book;
+import com.maids.LibrarySystem.IRepositries.IBookRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import java.time.LocalDate;
-import java.util.Optional;
+import java.util.List;
 
 @Service
 public class BookService {
-    @Autowired
-    private IBookRepository IBookRepository;
 
+    @Autowired
+    private com.maids.LibrarySystem.IRepositries.IBookRepository IBookRepository;
 
     public Book findByIsbn(String isbn) {
         // Check if the book and patron exist
@@ -81,5 +81,10 @@ public class BookService {
                 .orElseThrow(() -> new ResourceNotFoundException("Book not found with id " + id));
 
         IBookRepository.delete(book);
+    }
+
+    public List<Book> findAll()
+    {
+        return IBookRepository.findAll();
     }
 }

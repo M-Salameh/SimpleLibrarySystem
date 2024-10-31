@@ -1,9 +1,9 @@
-package Controllers;
+package com.maids.LibrarySystem.Controllers;
 
 
-import Entities.Patron;
-import IRopositries.IPatronRepository;
-import Services.PatronService;
+import com.maids.LibrarySystem.Entities.Patron;
+import com.maids.LibrarySystem.IRepositries.IPatronRepository;
+import com.maids.LibrarySystem.Services.PatronService;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.annotation.CacheEvict;
@@ -12,7 +12,6 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-import java.util.Optional;
 
 
 @RestController
@@ -52,7 +51,7 @@ public class PatronController {
 
     // Update an existing patron
     @PutMapping("/{id}")
-    //@CacheEvict(value = "All-Patrons")
+   // @CacheEvict(value = "All-Patrons")
     public ResponseEntity<Patron> updatePatron(@PathVariable Long id, @Valid @RequestBody Patron patronDetails)
     {
         Patron patron = patronService.updatePatron(id , patronDetails);

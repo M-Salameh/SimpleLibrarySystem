@@ -1,9 +1,8 @@
 package com.maids.LibrarySystem.Controllers;
 
-import Controllers.PatronController;
-import Entities.Patron;
-import IRopositries.IPatronRepository;
-import Services.PatronService;
+import com.maids.LibrarySystem.Entities.Patron;
+import com.maids.LibrarySystem.IRepositries.IPatronRepository;
+import com.maids.LibrarySystem.Services.PatronService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;

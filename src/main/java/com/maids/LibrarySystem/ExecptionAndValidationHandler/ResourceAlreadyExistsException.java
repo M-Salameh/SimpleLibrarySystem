@@ -1,4 +1,4 @@
-package ExecptionAndValidationHandler;
+package com.maids.LibrarySystem.ExecptionAndValidationHandler;
 
 public class ResourceAlreadyExistsException extends RuntimeException
 {
