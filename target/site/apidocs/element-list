@@ -1,0 +1,7 @@
+com.maids.LibrarySystem
+com.maids.LibrarySystem.AOPLogging
+com.maids.LibrarySystem.Controllers
+com.maids.LibrarySystem.Entities
+com.maids.LibrarySystem.ExecptionAndValidationHandler
+com.maids.LibrarySystem.IRepositries
+com.maids.LibrarySystem.Services
