@@ -15,7 +15,7 @@ Also Junit Tests are Added to test Controllers and Services Logic
 
 ## Getting Started
 ### How to Run:
-All you need is to run the jar file with java -jar application.jar and test using Postman
+All you need is to download project and RUn then test using Postman.
 make sure your java veresion is 17 or later.
 
 ### Using the Application:

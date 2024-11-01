@@ -678,3 +678,28 @@ insert into patron (address,email,name,id) values (?,?,?,default) [23505-224]] [
 2024-11-01 12:52:43 - Closing JPA EntityManagerFactory for persistence unit 'default'
 2024-11-01 12:52:43 - HikariPool-1 - Shutdown initiated...
 2024-11-01 12:52:43 - HikariPool-1 - Shutdown completed.
+2024-11-01 13:00:10 - Starting LibrarySystemApplication using Java 17.0.5 with PID 9372 (D:\Maids\LibraryProject\LibrarySystem\target\classes started by Mr_Salameh in D:\Maids\LibraryProject\LibrarySystem)
+2024-11-01 13:00:10 - No active profile set, falling back to 1 default profile: "default"
+2024-11-01 13:00:11 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-01 13:00:11 - Finished Spring Data repository scanning in 92 ms. Found 3 JPA repository interfaces.
+2024-11-01 13:00:13 - Tomcat initialized with port 8080 (http)
+2024-11-01 13:00:14 - Starting service [Tomcat]
+2024-11-01 13:00:14 - Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-11-01 13:00:14 - Initializing Spring embedded WebApplicationContext
+2024-11-01 13:00:14 - Root WebApplicationContext: initialization completed in 3946 ms
+2024-11-01 13:00:15 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-01 13:00:15 - HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-11-01 13:00:15 - HHH000026: Second-level cache disabled
+2024-11-01 13:00:15 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-01 13:00:15 - HikariPool-1 - Starting...
+2024-11-01 13:00:16 - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-11-01 13:00:16 - HikariPool-1 - Start completed.
+2024-11-01 13:00:16 - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-11-01 13:00:17 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-01 13:00:17 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-01 13:00:18 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-01 13:00:19 - Tomcat started on port 8080 (http) with context path '/'
+2024-11-01 13:00:19 - Started LibrarySystemApplication in 9.638 seconds (process running for 10.152)
+2024-11-01 13:00:51 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-01 13:00:51 - HikariPool-1 - Shutdown initiated...
+2024-11-01 13:00:51 - HikariPool-1 - Shutdown completed.
