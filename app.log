@@ -1,42 +1,249 @@
-2024-10-31 17:38:58 - Starting LibrarySystemApplication using Java 17.0.5 with PID 14292 (D:\Maids\LibraryProject\LibrarySystem\target\classes started by Mr_Salameh in D:\Maids\LibraryProject\LibrarySystem)
-2024-10-31 17:38:58 - No active profile set, falling back to 1 default profile: "default"
-2024-10-31 17:39:00 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-10-31 17:39:00 - Finished Spring Data repository scanning in 90 ms. Found 3 JPA repository interfaces.
-2024-10-31 17:39:02 - Tomcat initialized with port 8080 (http)
-2024-10-31 17:39:02 - Starting service [Tomcat]
-2024-10-31 17:39:02 - Starting Servlet engine: [Apache Tomcat/10.1.31]
-2024-10-31 17:39:02 - Initializing Spring embedded WebApplicationContext
-2024-10-31 17:39:02 - Root WebApplicationContext: initialization completed in 3336 ms
-2024-10-31 17:39:02 - HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-10-31 17:39:03 - HHH000412: Hibernate ORM core version 6.5.3.Final
-2024-10-31 17:39:03 - HHH000026: Second-level cache disabled
-2024-10-31 17:39:03 - No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-10-31 17:39:03 - HikariPool-1 - Starting...
-2024-10-31 17:39:04 - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
-2024-10-31 17:39:04 - HikariPool-1 - Start completed.
-2024-10-31 17:39:04 - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2024-10-31 17:39:05 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-10-31 17:39:05 - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-10-31 17:39:07 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-10-31 17:39:08 - Tomcat started on port 8080 (http) with context path '/'
-2024-10-31 17:39:08 - Started LibrarySystemApplication in 10.458 seconds (process running for 11.032)
-2024-10-31 17:39:25 - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-10-31 17:39:25 - Initializing Servlet 'dispatcherServlet'
-2024-10-31 17:39:25 - Completed initialization in 1 ms
-2024-10-31 17:39:25 - Entering method: ResponseEntity com.maids.LibrarySystem.Controllers.PatronController.createPatron(Patron)
-2024-10-31 17:39:25 - Exiting method: ResponseEntity com.maids.LibrarySystem.Controllers.PatronController.createPatron(Patron)
-2024-10-31 17:39:38 - Entering method: Book com.maids.LibrarySystem.Controllers.BookController.createBook(Book)
-2024-10-31 17:39:38 - Exiting method: Book com.maids.LibrarySystem.Controllers.BookController.createBook(Book)
-2024-10-31 17:39:43 - Entering method: Book com.maids.LibrarySystem.Controllers.BookController.createBook(Book)
-2024-10-31 17:39:43 - Exception in method: Book com.maids.LibrarySystem.Controllers.BookController.createBook(Book) with cause: Book with Same ISBN found !
-2024-10-31 17:39:43 - Exiting method: Book com.maids.LibrarySystem.Controllers.BookController.createBook(Book)
-2024-10-31 17:39:58 - Entering method: ResponseEntity com.maids.LibrarySystem.Controllers.BorrowRecordController.borrowBook(Long,Long)
-2024-10-31 17:39:58 - Exiting method: ResponseEntity com.maids.LibrarySystem.Controllers.BorrowRecordController.borrowBook(Long,Long)
-2024-10-31 17:40:07 - Entering method: ResponseEntity com.maids.LibrarySystem.Controllers.BorrowRecordController.returnBook(Long,Long)
-2024-10-31 17:40:07 - Exception in method: ResponseEntity com.maids.LibrarySystem.Controllers.BorrowRecordController.returnBook(Long,Long) with cause: Book not found with id 2
-2024-10-31 17:40:07 - Exiting method: ResponseEntity com.maids.LibrarySystem.Controllers.BorrowRecordController.returnBook(Long,Long)
-2024-10-31 17:40:16 - Entering method: ResponseEntity com.maids.LibrarySystem.Controllers.BorrowRecordController.returnBook(Long,Long)
-2024-10-31 17:40:16 - Exiting method: ResponseEntity com.maids.LibrarySystem.Controllers.BorrowRecordController.returnBook(Long,Long)
-2024-10-31 17:40:28 - Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-10-31 17:40:28 - HikariPool-1 - Shutdown initiated...
-2024-10-31 17:40:28 - HikariPool-1 - Shutdown completed.
+2024-11-01 11:49:36 - Starting LibrarySystemApplication using Java 17.0.5 with PID 10160 (D:\Maids\LibraryProject\LibrarySystem\target\classes started by Mr_Salameh in D:\Maids\LibraryProject\LibrarySystem)
+2024-11-01 11:49:36 - No active profile set, falling back to 1 default profile: "default"
+2024-11-01 11:49:38 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-01 11:49:38 - Finished Spring Data repository scanning in 94 ms. Found 3 JPA repository interfaces.
+2024-11-01 11:49:39 - Tomcat initialized with port 8080 (http)
+2024-11-01 11:49:39 - Starting service [Tomcat]
+2024-11-01 11:49:39 - Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-11-01 11:49:40 - Initializing Spring embedded WebApplicationContext
+2024-11-01 11:49:40 - Root WebApplicationContext: initialization completed in 3307 ms
+2024-11-01 11:49:40 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-01 11:49:40 - HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-11-01 11:49:40 - HHH000026: Second-level cache disabled
+2024-11-01 11:49:41 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-01 11:49:41 - HikariPool-1 - Starting...
+2024-11-01 11:49:41 - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-11-01 11:49:41 - HikariPool-1 - Start completed.
+2024-11-01 11:49:42 - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-11-01 11:49:43 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-01 11:49:43 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-01 11:49:45 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-01 11:49:46 - Tomcat started on port 8080 (http) with context path '/'
+2024-11-01 11:49:46 - Started LibrarySystemApplication in 10.413 seconds (process running for 11.074)
+2024-11-01 11:50:01 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-01 11:50:01 - Initializing Servlet 'dispatcherServlet'
+2024-11-01 11:50:01 - Completed initialization in 0 ms
+2024-11-01 11:50:49 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-01 11:50:49 - HikariPool-1 - Shutdown initiated...
+2024-11-01 11:50:49 - HikariPool-1 - Shutdown completed.
+2024-11-01 11:51:27 - Starting LibrarySystemApplication using Java 17.0.5 with PID 3768 (D:\Maids\LibraryProject\LibrarySystem\target\classes started by Mr_Salameh in D:\Maids\LibraryProject\LibrarySystem)
+2024-11-01 11:51:27 - No active profile set, falling back to 1 default profile: "default"
+2024-11-01 11:51:28 - Exception encountered during context initialization - cancelling refresh attempt: java.lang.TypeNotPresentException: Type javax.servlet.http.HttpServletRequest not present
+2024-11-01 11:51:28 - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-11-01 11:51:28 - Application run failed
+java.lang.TypeNotPresentException: Type javax.servlet.http.HttpServletRequest not present
+	at java.base/sun.reflect.generics.factory.CoreReflectionFactory.makeNamedType(CoreReflectionFactory.java:117)
+	at java.base/sun.reflect.generics.visitor.Reifier.visitClassTypeSignature(Reifier.java:125)
+	at java.base/sun.reflect.generics.tree.ClassTypeSignature.accept(ClassTypeSignature.java:49)
+	at java.base/sun.reflect.generics.visitor.Reifier.reifyTypeArguments(Reifier.java:68)
+	at java.base/sun.reflect.generics.visitor.Reifier.visitClassTypeSignature(Reifier.java:138)
+	at java.base/sun.reflect.generics.tree.ClassTypeSignature.accept(ClassTypeSignature.java:49)
+	at java.base/sun.reflect.generics.repository.ClassRepository.computeSuperInterfaces(ClassRepository.java:117)
+	at java.base/sun.reflect.generics.repository.ClassRepository.getSuperInterfaces(ClassRepository.java:95)
+	at java.base/java.lang.Class.getGenericInterfaces(Class.java:1211)
+	at org.springframework.core.ResolvableType.getInterfaces(ResolvableType.java:517)
+	at org.springframework.core.ResolvableType.as(ResolvableType.java:465)
+	at org.springframework.core.ResolvableType.forClass(ResolvableType.java:1093)
+	at org.springframework.plugin.core.config.PluginRegistriesBeanDefinitionRegistrar.getTargetType(PluginRegistriesBeanDefinitionRegistrar.java:101)
+	at org.springframework.plugin.core.config.PluginRegistriesBeanDefinitionRegistrar.registerBeanDefinitions(PluginRegistriesBeanDefinitionRegistrar.java:71)
+	at org.springframework.context.annotation.ImportBeanDefinitionRegistrar.registerBeanDefinitions(ImportBeanDefinitionRegistrar.java:86)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.lambda$loadBeanDefinitionsFromRegistrars$1(ConfigurationClassBeanDefinitionReader.java:376)
+	at java.base/java.util.LinkedHashMap.forEach(LinkedHashMap.java:721)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsFromRegistrars(ConfigurationClassBeanDefinitionReader.java:375)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForConfigurationClass(ConfigurationClassBeanDefinitionReader.java:148)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitions(ConfigurationClassBeanDefinitionReader.java:120)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:429)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:290)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:349)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:118)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:789)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:607)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
+	at com.maids.LibrarySystem.LibrarySystemApplication.main(LibrarySystemApplication.java:16)
+Caused by: java.lang.ClassNotFoundException: javax.servlet.http.HttpServletRequest
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:467)
+	at java.base/sun.reflect.generics.factory.CoreReflectionFactory.makeNamedType(CoreReflectionFactory.java:114)
+	... 32 common frames omitted
+2024-11-01 11:51:40 - Starting LibrarySystemApplication using Java 17.0.5 with PID 11476 (D:\Maids\LibraryProject\LibrarySystem\target\classes started by Mr_Salameh in D:\Maids\LibraryProject\LibrarySystem)
+2024-11-01 11:51:40 - No active profile set, falling back to 1 default profile: "default"
+2024-11-01 11:51:41 - Exception encountered during context initialization - cancelling refresh attempt: java.lang.TypeNotPresentException: Type javax.servlet.http.HttpServletRequest not present
+2024-11-01 11:51:41 - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-11-01 11:51:41 - Application run failed
+java.lang.TypeNotPresentException: Type javax.servlet.http.HttpServletRequest not present
+	at java.base/sun.reflect.generics.factory.CoreReflectionFactory.makeNamedType(CoreReflectionFactory.java:117)
+	at java.base/sun.reflect.generics.visitor.Reifier.visitClassTypeSignature(Reifier.java:125)
+	at java.base/sun.reflect.generics.tree.ClassTypeSignature.accept(ClassTypeSignature.java:49)
+	at java.base/sun.reflect.generics.visitor.Reifier.reifyTypeArguments(Reifier.java:68)
+	at java.base/sun.reflect.generics.visitor.Reifier.visitClassTypeSignature(Reifier.java:138)
+	at java.base/sun.reflect.generics.tree.ClassTypeSignature.accept(ClassTypeSignature.java:49)
+	at java.base/sun.reflect.generics.repository.ClassRepository.computeSuperInterfaces(ClassRepository.java:117)
+	at java.base/sun.reflect.generics.repository.ClassRepository.getSuperInterfaces(ClassRepository.java:95)
+	at java.base/java.lang.Class.getGenericInterfaces(Class.java:1211)
+	at org.springframework.core.ResolvableType.getInterfaces(ResolvableType.java:517)
+	at org.springframework.core.ResolvableType.as(ResolvableType.java:465)
+	at org.springframework.core.ResolvableType.forClass(ResolvableType.java:1093)
+	at org.springframework.plugin.core.config.PluginRegistriesBeanDefinitionRegistrar.getTargetType(PluginRegistriesBeanDefinitionRegistrar.java:101)
+	at org.springframework.plugin.core.config.PluginRegistriesBeanDefinitionRegistrar.registerBeanDefinitions(PluginRegistriesBeanDefinitionRegistrar.java:71)
+	at org.springframework.context.annotation.ImportBeanDefinitionRegistrar.registerBeanDefinitions(ImportBeanDefinitionRegistrar.java:86)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.lambda$loadBeanDefinitionsFromRegistrars$1(ConfigurationClassBeanDefinitionReader.java:376)
+	at java.base/java.util.LinkedHashMap.forEach(LinkedHashMap.java:721)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsFromRegistrars(ConfigurationClassBeanDefinitionReader.java:375)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForConfigurationClass(ConfigurationClassBeanDefinitionReader.java:148)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitions(ConfigurationClassBeanDefinitionReader.java:120)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:429)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:290)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:349)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:118)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:789)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:607)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
+	at com.maids.LibrarySystem.LibrarySystemApplication.main(LibrarySystemApplication.java:16)
+Caused by: java.lang.ClassNotFoundException: javax.servlet.http.HttpServletRequest
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:467)
+	at java.base/sun.reflect.generics.factory.CoreReflectionFactory.makeNamedType(CoreReflectionFactory.java:114)
+	... 32 common frames omitted
+2024-11-01 11:52:30 - Starting LibrarySystemApplication using Java 17.0.5 with PID 13944 (D:\Maids\LibraryProject\LibrarySystem\target\classes started by Mr_Salameh in D:\Maids\LibraryProject\LibrarySystem)
+2024-11-01 11:52:30 - No active profile set, falling back to 1 default profile: "default"
+2024-11-01 11:52:31 - Exception encountered during context initialization - cancelling refresh attempt: java.lang.TypeNotPresentException: Type javax.servlet.http.HttpServletRequest not present
+2024-11-01 11:52:31 - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-11-01 11:52:31 - Application run failed
+java.lang.TypeNotPresentException: Type javax.servlet.http.HttpServletRequest not present
+	at java.base/sun.reflect.generics.factory.CoreReflectionFactory.makeNamedType(CoreReflectionFactory.java:117)
+	at java.base/sun.reflect.generics.visitor.Reifier.visitClassTypeSignature(Reifier.java:125)
+	at java.base/sun.reflect.generics.tree.ClassTypeSignature.accept(ClassTypeSignature.java:49)
+	at java.base/sun.reflect.generics.visitor.Reifier.reifyTypeArguments(Reifier.java:68)
+	at java.base/sun.reflect.generics.visitor.Reifier.visitClassTypeSignature(Reifier.java:138)
+	at java.base/sun.reflect.generics.tree.ClassTypeSignature.accept(ClassTypeSignature.java:49)
+	at java.base/sun.reflect.generics.repository.ClassRepository.computeSuperInterfaces(ClassRepository.java:117)
+	at java.base/sun.reflect.generics.repository.ClassRepository.getSuperInterfaces(ClassRepository.java:95)
+	at java.base/java.lang.Class.getGenericInterfaces(Class.java:1211)
+	at org.springframework.core.ResolvableType.getInterfaces(ResolvableType.java:517)
+	at org.springframework.core.ResolvableType.as(ResolvableType.java:465)
+	at org.springframework.core.ResolvableType.forClass(ResolvableType.java:1093)
+	at org.springframework.plugin.core.config.PluginRegistriesBeanDefinitionRegistrar.getTargetType(PluginRegistriesBeanDefinitionRegistrar.java:101)
+	at org.springframework.plugin.core.config.PluginRegistriesBeanDefinitionRegistrar.registerBeanDefinitions(PluginRegistriesBeanDefinitionRegistrar.java:71)
+	at org.springframework.context.annotation.ImportBeanDefinitionRegistrar.registerBeanDefinitions(ImportBeanDefinitionRegistrar.java:86)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.lambda$loadBeanDefinitionsFromRegistrars$1(ConfigurationClassBeanDefinitionReader.java:376)
+	at java.base/java.util.LinkedHashMap.forEach(LinkedHashMap.java:721)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsFromRegistrars(ConfigurationClassBeanDefinitionReader.java:375)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForConfigurationClass(ConfigurationClassBeanDefinitionReader.java:148)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitions(ConfigurationClassBeanDefinitionReader.java:120)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:429)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:290)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:349)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:118)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:789)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:607)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
+	at com.maids.LibrarySystem.LibrarySystemApplication.main(LibrarySystemApplication.java:16)
+Caused by: java.lang.ClassNotFoundException: javax.servlet.http.HttpServletRequest
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:467)
+	at java.base/sun.reflect.generics.factory.CoreReflectionFactory.makeNamedType(CoreReflectionFactory.java:114)
+	... 32 common frames omitted
+2024-11-01 11:53:49 - Starting LibrarySystemApplication using Java 17.0.5 with PID 8012 (D:\Maids\LibraryProject\LibrarySystem\target\classes started by Mr_Salameh in D:\Maids\LibraryProject\LibrarySystem)
+2024-11-01 11:53:49 - No active profile set, falling back to 1 default profile: "default"
+2024-11-01 11:53:50 - Exception encountered during context initialization - cancelling refresh attempt: java.lang.TypeNotPresentException: Type javax.servlet.http.HttpServletRequest not present
+2024-11-01 11:53:50 - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-11-01 11:53:50 - Application run failed
+java.lang.TypeNotPresentException: Type javax.servlet.http.HttpServletRequest not present
+	at java.base/sun.reflect.generics.factory.CoreReflectionFactory.makeNamedType(CoreReflectionFactory.java:117)
+	at java.base/sun.reflect.generics.visitor.Reifier.visitClassTypeSignature(Reifier.java:125)
+	at java.base/sun.reflect.generics.tree.ClassTypeSignature.accept(ClassTypeSignature.java:49)
+	at java.base/sun.reflect.generics.visitor.Reifier.reifyTypeArguments(Reifier.java:68)
+	at java.base/sun.reflect.generics.visitor.Reifier.visitClassTypeSignature(Reifier.java:138)
+	at java.base/sun.reflect.generics.tree.ClassTypeSignature.accept(ClassTypeSignature.java:49)
+	at java.base/sun.reflect.generics.repository.ClassRepository.computeSuperInterfaces(ClassRepository.java:117)
+	at java.base/sun.reflect.generics.repository.ClassRepository.getSuperInterfaces(ClassRepository.java:95)
+	at java.base/java.lang.Class.getGenericInterfaces(Class.java:1211)
+	at org.springframework.core.ResolvableType.getInterfaces(ResolvableType.java:517)
+	at org.springframework.core.ResolvableType.as(ResolvableType.java:465)
+	at org.springframework.core.ResolvableType.forClass(ResolvableType.java:1093)
+	at org.springframework.plugin.core.config.PluginRegistriesBeanDefinitionRegistrar.getTargetType(PluginRegistriesBeanDefinitionRegistrar.java:101)
+	at org.springframework.plugin.core.config.PluginRegistriesBeanDefinitionRegistrar.registerBeanDefinitions(PluginRegistriesBeanDefinitionRegistrar.java:71)
+	at org.springframework.context.annotation.ImportBeanDefinitionRegistrar.registerBeanDefinitions(ImportBeanDefinitionRegistrar.java:86)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.lambda$loadBeanDefinitionsFromRegistrars$1(ConfigurationClassBeanDefinitionReader.java:376)
+	at java.base/java.util.LinkedHashMap.forEach(LinkedHashMap.java:721)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsFromRegistrars(ConfigurationClassBeanDefinitionReader.java:375)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForConfigurationClass(ConfigurationClassBeanDefinitionReader.java:148)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitions(ConfigurationClassBeanDefinitionReader.java:120)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:429)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:290)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:349)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:118)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:789)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:607)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
+	at com.maids.LibrarySystem.LibrarySystemApplication.main(LibrarySystemApplication.java:16)
+Caused by: java.lang.ClassNotFoundException: javax.servlet.http.HttpServletRequest
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:467)
+	at java.base/sun.reflect.generics.factory.CoreReflectionFactory.makeNamedType(CoreReflectionFactory.java:114)
+	... 32 common frames omitted
+2024-11-01 11:54:08 - Starting LibrarySystemApplication using Java 17.0.5 with PID 12200 (D:\Maids\LibraryProject\LibrarySystem\target\classes started by Mr_Salameh in D:\Maids\LibraryProject\LibrarySystem)
+2024-11-01 11:54:08 - No active profile set, falling back to 1 default profile: "default"
+2024-11-01 11:54:09 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-01 11:54:09 - Finished Spring Data repository scanning in 90 ms. Found 3 JPA repository interfaces.
+2024-11-01 11:54:11 - Tomcat initialized with port 8080 (http)
+2024-11-01 11:54:11 - Starting service [Tomcat]
+2024-11-01 11:54:11 - Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-11-01 11:54:11 - Initializing Spring embedded WebApplicationContext
+2024-11-01 11:54:11 - Root WebApplicationContext: initialization completed in 2875 ms
+2024-11-01 11:54:12 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-01 11:54:12 - HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-11-01 11:54:12 - HHH000026: Second-level cache disabled
+2024-11-01 11:54:12 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-01 11:54:12 - HikariPool-1 - Starting...
+2024-11-01 11:54:13 - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-11-01 11:54:13 - HikariPool-1 - Start completed.
+2024-11-01 11:54:13 - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-11-01 11:54:14 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-01 11:54:14 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-01 11:54:16 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-01 11:54:17 - Tomcat started on port 8080 (http) with context path '/'
+2024-11-01 11:54:17 - Started LibrarySystemApplication in 10.107 seconds (process running for 10.709)
+2024-11-01 11:54:31 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-01 11:54:31 - HikariPool-1 - Shutdown initiated...
+2024-11-01 11:54:31 - HikariPool-1 - Shutdown completed.
