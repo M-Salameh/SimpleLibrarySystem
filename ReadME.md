@@ -13,6 +13,9 @@ We used Aspect Oriented Programming Logging to log all system's methods calls, e
 
 Also Junit Tests are Added to test Controllers and Services Logic
 
+## Documentation
+in target/site/apidocs/index.html
+
 ## Getting Started
 ### How to Run:
 All you need is to download project and RUn then test using Postman.
