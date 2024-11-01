@@ -28,7 +28,13 @@ public class BorrowRecordController
     @Autowired
     private BorrowService borrowService;
 
-    // Allow a patron to borrow a book
+    /**
+     * Allow a patron to borrow a book.
+     *
+     * @param patronId The ID of the patron borrowing the book.
+     * @param bookId   The ID of the book to be borrowed.
+     * @return ResponseEntity containing the created borrow record.
+     */
     @PostMapping("borrow/{patronId}/book/{bookId}")
     public ResponseEntity<BorrowRecord> borrowBook(@PathVariable Long patronId, @PathVariable Long bookId)
     {
@@ -36,6 +42,13 @@ public class BorrowRecordController
         return ResponseEntity.status(HttpStatus.CREATED).body(borrowRecord);
     }
 
+    /**
+     * Allow a patron to return a book.
+     *
+     * @param bookId   The ID of the book being returned.
+     * @param patronId The ID of the patron returning the book.
+     * @return ResponseEntity containing the updated borrow record.
+     */
     @PutMapping("/return/{bookId}/patron/{patronId}")
     public ResponseEntity<BorrowRecord> returnBook(@PathVariable Long bookId, @PathVariable Long patronId)
     {

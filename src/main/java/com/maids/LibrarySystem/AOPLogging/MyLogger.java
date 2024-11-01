@@ -1,4 +1,4 @@
-package com.maids.LibrarySystem.AOPTLogging;
+package com.maids.LibrarySystem.AOPLogging;
 
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.annotation.*;

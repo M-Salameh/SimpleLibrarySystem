@@ -24,7 +24,11 @@ public class BookController {
     @Autowired
     private BookService bookService;
 
-    // Retrieve all books
+    /**
+     * Retrieve all books.
+     *
+     * @return List of all books.
+     */
     @GetMapping
    // @Cacheable(value = "All-Books")
     public List<Book> getAllBooks() {
@@ -32,7 +36,12 @@ public class BookController {
         return bookService.findAll();
     }
 
-    // Get a book by its ISBN
+    /**
+     * Get a book by its ISBN.
+     *
+     * @param isbn The ISBN of the book to retrieve.
+     * @return ResponseEntity containing the book if found.
+     */
     @GetMapping("/isbn/{isbn}")
    // @Cacheable(value = "Books-by-ISBN" , key = "#isbn")
     public ResponseEntity<Book> getBookByIsbn(@PathVariable String isbn)
@@ -41,7 +50,12 @@ public class BookController {
         return ResponseEntity.ok(book);
     }
 
-    // Retrieve a specific book by ID
+    /**
+     * Retrieve a specific book by ID.
+     *
+     * @param id The ID of the book to retrieve.
+     * @return ResponseEntity containing the book if found.
+     */
     @GetMapping("/{id}")
     //@Cacheable(value = "Books-by-ID" , key = "#id")
     public ResponseEntity<Book> getBookById(@PathVariable Long id)
@@ -50,7 +64,12 @@ public class BookController {
         return ResponseEntity.ok(book);
     }
 
-    // Add a new book
+    /**
+     * Add a new book.
+     *
+     * @param book The book to add.
+     * @return The created book.
+     */
     @PostMapping
     //@CacheEvict(value = "All-Books" , allEntries = true)
     public Book createBook(@Valid @RequestBody Book book)
@@ -58,7 +77,13 @@ public class BookController {
         return bookService.createBook(book);
     }
 
-    // Update an existing book
+    /**
+     * Update an existing book.
+     *
+     * @param id          The ID of the book to update.
+     * @param bookDetails The new details for the book.
+     * @return ResponseEntity containing the updated book.
+     */
     @PutMapping("/{id}")
     //@CacheEvict(value = {"All-Books" , "Books-by-ISBN"} , allEntries = true)
     public ResponseEntity<Book> updateBook(@PathVariable Long id, @Valid @RequestBody Book bookDetails) {
@@ -67,7 +92,12 @@ public class BookController {
         return ResponseEntity.ok(book);
     }
 
-    // Remove a book
+    /**
+     * Remove a book.
+     *
+     * @param id The ID of the book to remove.
+     * @return ResponseEntity with no content status.
+     */
     @DeleteMapping("/{id}")
     //@CacheEvict(value = {"All-Books" , "Books-by-ID" , "Books-by-ISBN"} , allEntries = true)
     public ResponseEntity<Void> deleteBook(@PathVariable Long id)

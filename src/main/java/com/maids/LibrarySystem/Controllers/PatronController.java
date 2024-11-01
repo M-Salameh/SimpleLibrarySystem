@@ -23,14 +23,23 @@ public class PatronController {
     @Autowired
     private PatronService patronService;
 
-    // Retrieve all patrons
+    /**
+     * Retrieve all patrons.
+     *
+     * @return List of all patrons.
+     */
     @GetMapping
     //@Cacheable(value = "All-Patrons")
     public List<Patron> getAllPatrons() {
         return patronRepository.findAll();
     }
 
-    // Retrieve a specific patron by ID
+    /**
+     * Retrieve a specific patron by ID.
+     *
+     * @param id The ID of the patron to retrieve.
+     * @return ResponseEntity containing the patron if found, or not found status.
+     */
     @GetMapping("/{id}")
    // @Cacheable(value = "Patrons-by-ID" , key = "#id")
     public ResponseEntity<Patron> getPatronById(@PathVariable Long id) {
@@ -41,7 +50,12 @@ public class PatronController {
 
     }
 
-    // Add a new patron
+    /**
+     * Add a new patron.
+     *
+     * @param patron The patron to add.
+     * @return ResponseEntity containing the created patron.
+     */
     @PostMapping
     //@CacheEvict(value = "All-Patrons")
     public ResponseEntity<Patron> createPatron(@Valid @RequestBody Patron patron) {
@@ -49,7 +63,13 @@ public class PatronController {
         return ResponseEntity.ok(patron1);
     }
 
-    // Update an existing patron
+    /**
+     * Update an existing patron.
+     *
+     * @param id The ID of the patron to update.
+     * @param patronDetails The new details for the patron.
+     * @return ResponseEntity containing the updated patron.
+     */
     @PutMapping("/{id}")
    // @CacheEvict(value = "All-Patrons")
     public ResponseEntity<Patron> updatePatron(@PathVariable Long id, @Valid @RequestBody Patron patronDetails)
@@ -58,7 +78,12 @@ public class PatronController {
         return ResponseEntity.ok(patron);
     }
 
-    // Remove a patron
+    /**
+     * Remove a patron.
+     *
+     * @param id The ID of the patron to remove.
+     * @return ResponseEntity with no content status.
+     */
     @DeleteMapping("/{id}")
     //@CacheEvict(value = {"All-Patrons"  , "Patrons-by-ID"} , allEntries = true)
     public ResponseEntity<Void> deletePatron(@PathVariable Long id) {
