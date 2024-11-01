@@ -30,7 +30,7 @@ public class BookController {
      * @return List of all books.
      */
     @GetMapping
-   // @Cacheable(value = "All-Books")
+    @Cacheable(value = "All-Books")
     public List<Book> getAllBooks() {
 
         return bookService.findAll();
@@ -43,7 +43,7 @@ public class BookController {
      * @return ResponseEntity containing the book if found.
      */
     @GetMapping("/isbn/{isbn}")
-   // @Cacheable(value = "Books-by-ISBN" , key = "#isbn")
+    @Cacheable(value = "Books-by-ISBN" , key = "#isbn")
     public ResponseEntity<Book> getBookByIsbn(@PathVariable String isbn)
     {
         Book book = bookService.findByIsbn(isbn);
@@ -57,7 +57,7 @@ public class BookController {
      * @return ResponseEntity containing the book if found.
      */
     @GetMapping("/{id}")
-    //@Cacheable(value = "Books-by-ID" , key = "#id")
+    @Cacheable(value = "Books-by-ID" , key = "#id")
     public ResponseEntity<Book> getBookById(@PathVariable Long id)
     {
         Book book = bookService.getBookById(id);
@@ -71,7 +71,7 @@ public class BookController {
      * @return The created book.
      */
     @PostMapping
-    //@CacheEvict(value = "All-Books" , allEntries = true)
+    @CacheEvict(value = "All-Books" , allEntries = true)
     public Book createBook(@Valid @RequestBody Book book)
     {
         return bookService.createBook(book);
@@ -85,7 +85,7 @@ public class BookController {
      * @return ResponseEntity containing the updated book.
      */
     @PutMapping("/{id}")
-    //@CacheEvict(value = {"All-Books" , "Books-by-ISBN"} , allEntries = true)
+    @CacheEvict(value = {"All-Books" , "Books-by-ISBN"} , allEntries = true)
     public ResponseEntity<Book> updateBook(@PathVariable Long id, @Valid @RequestBody Book bookDetails) {
 
         Book book = bookService.updateBook(id , bookDetails);
@@ -99,7 +99,7 @@ public class BookController {
      * @return ResponseEntity with no content status.
      */
     @DeleteMapping("/{id}")
-    //@CacheEvict(value = {"All-Books" , "Books-by-ID" , "Books-by-ISBN"} , allEntries = true)
+    @CacheEvict(value = {"All-Books" , "Books-by-ID" , "Books-by-ISBN"} , allEntries = true)
     public ResponseEntity<Void> deleteBook(@PathVariable Long id)
     {
 

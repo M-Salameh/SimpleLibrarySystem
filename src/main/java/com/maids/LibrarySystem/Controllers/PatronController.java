@@ -29,7 +29,7 @@ public class PatronController {
      * @return List of all patrons.
      */
     @GetMapping
-    //@Cacheable(value = "All-Patrons")
+    @Cacheable(value = "All-Patrons")
     public List<Patron> getAllPatrons() {
         return patronRepository.findAll();
     }
@@ -41,7 +41,7 @@ public class PatronController {
      * @return ResponseEntity containing the patron if found, or not found status.
      */
     @GetMapping("/{id}")
-   // @Cacheable(value = "Patrons-by-ID" , key = "#id")
+    @Cacheable(value = "Patrons-by-ID" , key = "#id")
     public ResponseEntity<Patron> getPatronById(@PathVariable Long id) {
 
         Patron patron = patronService.getPatronById(id);
@@ -57,7 +57,7 @@ public class PatronController {
      * @return ResponseEntity containing the created patron.
      */
     @PostMapping
-    //@CacheEvict(value = "All-Patrons")
+    @CacheEvict(value = "All-Patrons")
     public ResponseEntity<Patron> createPatron(@Valid @RequestBody Patron patron) {
         Patron patron1 = patronService.createPatron(patron);
         return ResponseEntity.ok(patron1);
@@ -71,7 +71,7 @@ public class PatronController {
      * @return ResponseEntity containing the updated patron.
      */
     @PutMapping("/{id}")
-   // @CacheEvict(value = "All-Patrons")
+    @CacheEvict(value = "All-Patrons")
     public ResponseEntity<Patron> updatePatron(@PathVariable Long id, @Valid @RequestBody Patron patronDetails)
     {
         Patron patron = patronService.updatePatron(id , patronDetails);
@@ -85,7 +85,7 @@ public class PatronController {
      * @return ResponseEntity with no content status.
      */
     @DeleteMapping("/{id}")
-    //@CacheEvict(value = {"All-Patrons"  , "Patrons-by-ID"} , allEntries = true)
+    @CacheEvict(value = {"All-Patrons"  , "Patrons-by-ID"} , allEntries = true)
     public ResponseEntity<Void> deletePatron(@PathVariable Long id) {
         patronService.deletePatron(id);
 

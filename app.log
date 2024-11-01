@@ -247,3 +247,434 @@ Caused by: java.lang.ClassNotFoundException: javax.servlet.http.HttpServletReque
 2024-11-01 11:54:31 - Closing JPA EntityManagerFactory for persistence unit 'default'
 2024-11-01 11:54:31 - HikariPool-1 - Shutdown initiated...
 2024-11-01 11:54:31 - HikariPool-1 - Shutdown completed.
+2024-11-01 12:11:17 - Starting LibrarySystemApplication using Java 17.0.5 with PID 11948 (D:\Maids\LibraryProject\LibrarySystem\target\classes started by Mr_Salameh in D:\Maids\LibraryProject\LibrarySystem)
+2024-11-01 12:11:17 - No active profile set, falling back to 1 default profile: "default"
+2024-11-01 12:11:18 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-01 12:11:18 - Finished Spring Data repository scanning in 91 ms. Found 3 JPA repository interfaces.
+2024-11-01 12:11:20 - Tomcat initialized with port 8080 (http)
+2024-11-01 12:11:20 - Starting service [Tomcat]
+2024-11-01 12:11:20 - Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-11-01 12:11:20 - Initializing Spring embedded WebApplicationContext
+2024-11-01 12:11:20 - Root WebApplicationContext: initialization completed in 2627 ms
+2024-11-01 12:11:20 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-01 12:11:20 - HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-11-01 12:11:20 - HHH000026: Second-level cache disabled
+2024-11-01 12:11:21 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-01 12:11:21 - HikariPool-1 - Starting...
+2024-11-01 12:11:21 - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-11-01 12:11:21 - HikariPool-1 - Start completed.
+2024-11-01 12:11:21 - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-11-01 12:11:23 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-01 12:11:23 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-01 12:11:24 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-01 12:11:25 - Tomcat started on port 8080 (http) with context path '/'
+2024-11-01 12:11:25 - Started LibrarySystemApplication in 8.844 seconds (process running for 9.359)
+2024-11-01 12:11:30 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-01 12:11:30 - HikariPool-1 - Shutdown initiated...
+2024-11-01 12:11:30 - HikariPool-1 - Shutdown completed.
+2024-11-01 12:11:53 - Starting LibrarySystemApplication using Java 17.0.5 with PID 12608 (D:\Maids\LibraryProject\LibrarySystem\target\classes started by Mr_Salameh in D:\Maids\LibraryProject\LibrarySystem)
+2024-11-01 12:11:53 - No active profile set, falling back to 1 default profile: "default"
+2024-11-01 12:11:55 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-01 12:11:55 - Finished Spring Data repository scanning in 119 ms. Found 3 JPA repository interfaces.
+2024-11-01 12:11:57 - Tomcat initialized with port 8080 (http)
+2024-11-01 12:11:57 - Starting service [Tomcat]
+2024-11-01 12:11:57 - Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-11-01 12:11:57 - Initializing Spring embedded WebApplicationContext
+2024-11-01 12:11:57 - Root WebApplicationContext: initialization completed in 4080 ms
+2024-11-01 12:11:58 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-01 12:11:58 - HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-11-01 12:11:58 - HHH000026: Second-level cache disabled
+2024-11-01 12:11:59 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-01 12:11:59 - HikariPool-1 - Starting...
+2024-11-01 12:12:00 - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-11-01 12:12:00 - HikariPool-1 - Start completed.
+2024-11-01 12:12:00 - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-11-01 12:12:01 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-01 12:12:02 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-01 12:12:04 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-01 12:12:05 - Tomcat started on port 8080 (http) with context path '/'
+2024-11-01 12:12:06 - Started LibrarySystemApplication in 13.111 seconds (process running for 13.84)
+2024-11-01 12:12:11 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-01 12:12:11 - Initializing Servlet 'dispatcherServlet'
+2024-11-01 12:12:11 - Completed initialization in 0 ms
+2024-11-01 12:15:00 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-01 12:15:00 - HikariPool-1 - Shutdown initiated...
+2024-11-01 12:15:00 - HikariPool-1 - Shutdown completed.
+2024-11-01 12:15:09 - Starting LibrarySystemApplication using Java 17.0.5 with PID 11972 (D:\Maids\LibraryProject\LibrarySystem\target\classes started by Mr_Salameh in D:\Maids\LibraryProject\LibrarySystem)
+2024-11-01 12:15:09 - No active profile set, falling back to 1 default profile: "default"
+2024-11-01 12:15:10 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-01 12:15:10 - Finished Spring Data repository scanning in 95 ms. Found 3 JPA repository interfaces.
+2024-11-01 12:15:12 - Tomcat initialized with port 8080 (http)
+2024-11-01 12:15:12 - Starting service [Tomcat]
+2024-11-01 12:15:12 - Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-11-01 12:15:12 - Initializing Spring embedded WebApplicationContext
+2024-11-01 12:15:12 - Root WebApplicationContext: initialization completed in 2511 ms
+2024-11-01 12:15:12 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: 'entityManagerFactory' depends on missing bean 'cacheManager'
+2024-11-01 12:15:12 - Stopping service [Tomcat]
+2024-11-01 12:15:12 - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-11-01 12:15:12 - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+A component required a bean named 'cacheManager' that could not be found.
+
+
+Action:
+
+Consider defining a bean named 'cacheManager' in your configuration.
+
+2024-11-01 12:17:20 - Starting LibrarySystemApplication using Java 17.0.5 with PID 5880 (D:\Maids\LibraryProject\LibrarySystem\target\classes started by Mr_Salameh in D:\Maids\LibraryProject\LibrarySystem)
+2024-11-01 12:17:20 - No active profile set, falling back to 1 default profile: "default"
+2024-11-01 12:17:22 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-01 12:17:22 - Finished Spring Data repository scanning in 79 ms. Found 3 JPA repository interfaces.
+2024-11-01 12:17:23 - Tomcat initialized with port 8080 (http)
+2024-11-01 12:17:23 - Starting service [Tomcat]
+2024-11-01 12:17:23 - Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-11-01 12:17:23 - Initializing Spring embedded WebApplicationContext
+2024-11-01 12:17:23 - Root WebApplicationContext: initialization completed in 2681 ms
+2024-11-01 12:17:23 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: 'entityManagerFactory' depends on missing bean 'cacheManager'
+2024-11-01 12:17:23 - Stopping service [Tomcat]
+2024-11-01 12:17:23 - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-11-01 12:17:23 - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+A component required a bean named 'cacheManager' that could not be found.
+
+
+Action:
+
+Consider defining a bean named 'cacheManager' in your configuration.
+
+2024-11-01 12:18:08 - Starting LibrarySystemApplication using Java 17.0.5 with PID 7292 (D:\Maids\LibraryProject\LibrarySystem\target\classes started by Mr_Salameh in D:\Maids\LibraryProject\LibrarySystem)
+2024-11-01 12:18:08 - No active profile set, falling back to 1 default profile: "default"
+2024-11-01 12:18:09 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-01 12:18:09 - Finished Spring Data repository scanning in 92 ms. Found 3 JPA repository interfaces.
+2024-11-01 12:18:10 - Tomcat initialized with port 8080 (http)
+2024-11-01 12:18:10 - Starting service [Tomcat]
+2024-11-01 12:18:10 - Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-11-01 12:18:10 - Initializing Spring embedded WebApplicationContext
+2024-11-01 12:18:10 - Root WebApplicationContext: initialization completed in 2557 ms
+2024-11-01 12:18:11 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: 'entityManagerFactory' depends on missing bean 'cacheManager'
+2024-11-01 12:18:11 - Stopping service [Tomcat]
+2024-11-01 12:18:11 - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-11-01 12:18:11 - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+A component required a bean named 'cacheManager' that could not be found.
+
+
+Action:
+
+Consider defining a bean named 'cacheManager' in your configuration.
+
+2024-11-01 12:18:55 - Starting LibrarySystemApplication using Java 17.0.5 with PID 6804 (D:\Maids\LibraryProject\LibrarySystem\target\classes started by Mr_Salameh in D:\Maids\LibraryProject\LibrarySystem)
+2024-11-01 12:18:55 - No active profile set, falling back to 1 default profile: "default"
+2024-11-01 12:18:56 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-01 12:18:56 - Finished Spring Data repository scanning in 107 ms. Found 3 JPA repository interfaces.
+2024-11-01 12:18:58 - Tomcat initialized with port 8080 (http)
+2024-11-01 12:18:58 - Starting service [Tomcat]
+2024-11-01 12:18:58 - Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-11-01 12:18:58 - Initializing Spring embedded WebApplicationContext
+2024-11-01 12:18:58 - Root WebApplicationContext: initialization completed in 3016 ms
+2024-11-01 12:18:58 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: 'entityManagerFactory' depends on missing bean 'cacheManager'
+2024-11-01 12:18:58 - Stopping service [Tomcat]
+2024-11-01 12:18:58 - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-11-01 12:18:58 - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+A component required a bean named 'cacheManager' that could not be found.
+
+
+Action:
+
+Consider defining a bean named 'cacheManager' in your configuration.
+
+2024-11-01 12:24:44 - Starting LibrarySystemApplication using Java 17.0.5 with PID 11892 (D:\Maids\LibraryProject\LibrarySystem\target\classes started by Mr_Salameh in D:\Maids\LibraryProject\LibrarySystem)
+2024-11-01 12:24:44 - No active profile set, falling back to 1 default profile: "default"
+2024-11-01 12:24:45 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-01 12:24:46 - Finished Spring Data repository scanning in 81 ms. Found 3 JPA repository interfaces.
+2024-11-01 12:24:47 - Tomcat initialized with port 8080 (http)
+2024-11-01 12:24:47 - Starting service [Tomcat]
+2024-11-01 12:24:47 - Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-11-01 12:24:47 - Initializing Spring embedded WebApplicationContext
+2024-11-01 12:24:47 - Root WebApplicationContext: initialization completed in 2869 ms
+2024-11-01 12:24:48 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-01 12:24:48 - HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-11-01 12:24:48 - Failed to initialize JPA EntityManagerFactory: Unable to create requested service [org.hibernate.cache.spi.RegionFactory] due to: Unable to resolve name [org.hibernate.cache.jcache.JCacheRegionFactory] as strategy [org.hibernate.cache.spi.RegionFactory]
+2024-11-01 12:24:48 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Unable to create requested service [org.hibernate.cache.spi.RegionFactory] due to: Unable to resolve name [org.hibernate.cache.jcache.JCacheRegionFactory] as strategy [org.hibernate.cache.spi.RegionFactory]
+2024-11-01 12:24:48 - Stopping service [Tomcat]
+2024-11-01 12:24:48 - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-11-01 12:24:48 - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Unable to create requested service [org.hibernate.cache.spi.RegionFactory] due to: Unable to resolve name [org.hibernate.cache.jcache.JCacheRegionFactory] as strategy [org.hibernate.cache.spi.RegionFactory]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1806)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:954)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:625)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
+	at com.maids.LibrarySystem.LibrarySystemApplication.main(LibrarySystemApplication.java:16)
+Caused by: org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.cache.spi.RegionFactory] due to: Unable to resolve name [org.hibernate.cache.jcache.JCacheRegionFactory] as strategy [org.hibernate.cache.spi.RegionFactory]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:276)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:238)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:215)
+	at org.hibernate.boot.internal.MetadataBuilderImpl$MetadataBuildingOptionsImpl.<init>(MetadataBuilderImpl.java:705)
+	at org.hibernate.boot.internal.MetadataBuilderImpl.<init>(MetadataBuilderImpl.java:139)
+	at org.hibernate.boot.MetadataSources.getMetadataBuilder(MetadataSources.java:164)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.<init>(EntityManagerFactoryBuilderImpl.java:276)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.<init>(EntityManagerFactoryBuilderImpl.java:197)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:63)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1853)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1802)
+	... 15 common frames omitted
+Caused by: org.hibernate.boot.registry.selector.spi.StrategySelectionException: Unable to resolve name [org.hibernate.cache.jcache.JCacheRegionFactory] as strategy [org.hibernate.cache.spi.RegionFactory]
+	at org.hibernate.boot.registry.selector.internal.StrategySelectorImpl.selectStrategyImplementor(StrategySelectorImpl.java:154)
+	at org.hibernate.boot.registry.selector.internal.StrategySelectorImpl.resolveStrategy(StrategySelectorImpl.java:236)
+	at org.hibernate.boot.registry.selector.internal.StrategySelectorImpl.resolveStrategy(StrategySelectorImpl.java:189)
+	at org.hibernate.cache.internal.RegionFactoryInitiator.resolveRegionFactory(RegionFactoryInitiator.java:96)
+	at org.hibernate.cache.internal.RegionFactoryInitiator.initiateService(RegionFactoryInitiator.java:47)
+	at org.hibernate.cache.internal.RegionFactoryInitiator.initiateService(RegionFactoryInitiator.java:32)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:130)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)
+	... 29 common frames omitted
+Caused by: org.hibernate.boot.registry.classloading.spi.ClassLoadingException: Unable to load class [org.hibernate.cache.jcache.JCacheRegionFactory]
+	at org.hibernate.boot.registry.classloading.internal.ClassLoaderServiceImpl.classForName(ClassLoaderServiceImpl.java:126)
+	at org.hibernate.boot.registry.selector.internal.StrategySelectorImpl.selectStrategyImplementor(StrategySelectorImpl.java:150)
+	... 36 common frames omitted
+Caused by: java.lang.ClassNotFoundException: Could not load requested class : org.hibernate.cache.jcache.JCacheRegionFactory
+	at org.hibernate.boot.registry.classloading.internal.AggregatedClassLoader.findClass(AggregatedClassLoader.java:216)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:587)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:467)
+	at org.hibernate.boot.registry.classloading.internal.ClassLoaderServiceImpl.classForName(ClassLoaderServiceImpl.java:123)
+	... 37 common frames omitted
+Caused by: java.lang.Throwable: null
+	at org.hibernate.boot.registry.classloading.internal.AggregatedClassLoader.findClass(AggregatedClassLoader.java:209)
+	... 42 common frames omitted
+	Suppressed: java.lang.ClassNotFoundException: org.hibernate.cache.jcache.JCacheRegionFactory
+		at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+		at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+		at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+		at org.hibernate.boot.registry.classloading.internal.AggregatedClassLoader.findClass(AggregatedClassLoader.java:206)
+		... 42 common frames omitted
+	Suppressed: java.lang.ClassNotFoundException: org.hibernate.cache.jcache.JCacheRegionFactory
+		at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+		at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+		at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+		at org.hibernate.boot.registry.classloading.internal.AggregatedClassLoader.findClass(AggregatedClassLoader.java:206)
+		... 42 common frames omitted
+	Suppressed: java.lang.ClassNotFoundException: org.hibernate.cache.jcache.JCacheRegionFactory
+		at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+		at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+		at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+		at org.hibernate.boot.registry.classloading.internal.AggregatedClassLoader.findClass(AggregatedClassLoader.java:206)
+		... 42 common frames omitted
+2024-11-01 12:28:49 - Starting LibrarySystemApplication using Java 17.0.5 with PID 3604 (D:\Maids\LibraryProject\LibrarySystem\target\classes started by Mr_Salameh in D:\Maids\LibraryProject\LibrarySystem)
+2024-11-01 12:28:49 - No active profile set, falling back to 1 default profile: "default"
+2024-11-01 12:28:50 - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-11-01 12:28:50 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-01 12:28:50 - Finished Spring Data repository scanning in 242 ms. Found 3 JPA repository interfaces.
+2024-11-01 12:28:50 - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-11-01 12:28:50 - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-11-01 12:28:50 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.maids.LibrarySystem.IRepositries.IBookRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-11-01 12:28:50 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.maids.LibrarySystem.IRepositries.IBorrowRecordRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-11-01 12:28:50 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.maids.LibrarySystem.IRepositries.IPatronRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-11-01 12:28:50 - Finished Spring Data repository scanning in 13 ms. Found 0 Redis repository interfaces.
+2024-11-01 12:28:52 - Tomcat initialized with port 8080 (http)
+2024-11-01 12:28:52 - Starting service [Tomcat]
+2024-11-01 12:28:52 - Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-11-01 12:28:52 - Initializing Spring embedded WebApplicationContext
+2024-11-01 12:28:52 - Root WebApplicationContext: initialization completed in 3372 ms
+2024-11-01 12:28:53 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-01 12:28:53 - HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-11-01 12:28:53 - HHH000026: Second-level cache disabled
+2024-11-01 12:28:54 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-01 12:28:54 - HikariPool-1 - Starting...
+2024-11-01 12:28:54 - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-11-01 12:28:54 - HikariPool-1 - Start completed.
+2024-11-01 12:28:54 - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-11-01 12:28:55 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-01 12:28:56 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-01 12:28:57 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-01 12:28:59 - Tomcat started on port 8080 (http) with context path '/'
+2024-11-01 12:28:59 - Started LibrarySystemApplication in 10.896 seconds (process running for 11.564)
+2024-11-01 12:29:04 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-01 12:29:04 - Initializing Servlet 'dispatcherServlet'
+2024-11-01 12:29:04 - Completed initialization in 2 ms
+2024-11-01 12:30:05 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-01 12:30:05 - HikariPool-1 - Shutdown initiated...
+2024-11-01 12:30:05 - HikariPool-1 - Shutdown completed.
+2024-11-01 12:31:08 - Starting LibrarySystemApplication using Java 17.0.5 with PID 14284 (D:\Maids\LibraryProject\LibrarySystem\target\classes started by Mr_Salameh in D:\Maids\LibraryProject\LibrarySystem)
+2024-11-01 12:31:08 - No active profile set, falling back to 1 default profile: "default"
+2024-11-01 12:31:10 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-01 12:31:10 - Finished Spring Data repository scanning in 114 ms. Found 3 JPA repository interfaces.
+2024-11-01 12:31:11 - Tomcat initialized with port 8080 (http)
+2024-11-01 12:31:11 - Starting service [Tomcat]
+2024-11-01 12:31:11 - Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-11-01 12:31:11 - Initializing Spring embedded WebApplicationContext
+2024-11-01 12:31:11 - Root WebApplicationContext: initialization completed in 2995 ms
+2024-11-01 12:31:12 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-01 12:31:12 - HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-11-01 12:31:12 - HHH000026: Second-level cache disabled
+2024-11-01 12:31:13 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-01 12:31:13 - HikariPool-1 - Starting...
+2024-11-01 12:31:13 - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-11-01 12:31:13 - HikariPool-1 - Start completed.
+2024-11-01 12:31:13 - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-11-01 12:31:15 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-01 12:31:15 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-01 12:31:17 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-01 12:31:18 - Tomcat started on port 8080 (http) with context path '/'
+2024-11-01 12:31:18 - Started LibrarySystemApplication in 10.189 seconds (process running for 10.8)
+2024-11-01 12:31:25 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-01 12:31:25 - Initializing Servlet 'dispatcherServlet'
+2024-11-01 12:31:25 - Completed initialization in 1 ms
+2024-11-01 12:31:25 - Entering method: List com.maids.LibrarySystem.Controllers.BookController.getAllBooks()
+2024-11-01 12:31:25 - Exiting method: List com.maids.LibrarySystem.Controllers.BookController.getAllBooks()
+2024-11-01 12:31:36 - Entering method: Book com.maids.LibrarySystem.Controllers.BookController.createBook(Book)
+2024-11-01 12:31:36 - Exiting method: Book com.maids.LibrarySystem.Controllers.BookController.createBook(Book)
+2024-11-01 12:31:47 - Entering method: Book com.maids.LibrarySystem.Controllers.BookController.createBook(Book)
+2024-11-01 12:31:47 - Exiting method: Book com.maids.LibrarySystem.Controllers.BookController.createBook(Book)
+2024-11-01 12:31:52 - Entering method: Book com.maids.LibrarySystem.Controllers.BookController.createBook(Book)
+2024-11-01 12:31:52 - Exiting method: Book com.maids.LibrarySystem.Controllers.BookController.createBook(Book)
+2024-11-01 12:32:20 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-01 12:32:20 - HikariPool-1 - Shutdown initiated...
+2024-11-01 12:32:20 - HikariPool-1 - Shutdown completed.
+2024-11-01 12:32:48 - Starting LibrarySystemApplication using Java 17.0.5 with PID 13536 (D:\Maids\LibraryProject\LibrarySystem\target\classes started by Mr_Salameh in D:\Maids\LibraryProject\LibrarySystem)
+2024-11-01 12:32:48 - No active profile set, falling back to 1 default profile: "default"
+2024-11-01 12:32:49 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-01 12:32:49 - Finished Spring Data repository scanning in 94 ms. Found 3 JPA repository interfaces.
+2024-11-01 12:32:50 - Tomcat initialized with port 8080 (http)
+2024-11-01 12:32:50 - Starting service [Tomcat]
+2024-11-01 12:32:50 - Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-11-01 12:32:50 - Initializing Spring embedded WebApplicationContext
+2024-11-01 12:32:50 - Root WebApplicationContext: initialization completed in 2616 ms
+2024-11-01 12:32:51 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-01 12:32:51 - HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-11-01 12:32:51 - HHH000026: Second-level cache disabled
+2024-11-01 12:32:51 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-01 12:32:51 - HikariPool-1 - Starting...
+2024-11-01 12:32:52 - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-11-01 12:32:52 - HikariPool-1 - Start completed.
+2024-11-01 12:32:52 - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-11-01 12:32:53 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-01 12:32:53 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-01 12:32:55 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-01 12:32:56 - Tomcat started on port 8080 (http) with context path '/'
+2024-11-01 12:32:56 - Started LibrarySystemApplication in 8.475 seconds (process running for 8.99)
+2024-11-01 12:33:04 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-01 12:33:04 - Initializing Servlet 'dispatcherServlet'
+2024-11-01 12:33:04 - Completed initialization in 1 ms
+2024-11-01 12:33:04 - Entering method: Book com.maids.LibrarySystem.Controllers.BookController.createBook(Book)
+2024-11-01 12:33:04 - Exiting method: Book com.maids.LibrarySystem.Controllers.BookController.createBook(Book)
+2024-11-01 12:33:10 - Entering method: Book com.maids.LibrarySystem.Controllers.BookController.createBook(Book)
+2024-11-01 12:33:10 - Exiting method: Book com.maids.LibrarySystem.Controllers.BookController.createBook(Book)
+2024-11-01 12:33:14 - Entering method: List com.maids.LibrarySystem.Controllers.BookController.getAllBooks()
+2024-11-01 12:33:14 - Exiting method: List com.maids.LibrarySystem.Controllers.BookController.getAllBooks()
+2024-11-01 12:33:28 - Entering method: Book com.maids.LibrarySystem.Controllers.BookController.createBook(Book)
+2024-11-01 12:33:28 - Exiting method: Book com.maids.LibrarySystem.Controllers.BookController.createBook(Book)
+2024-11-01 12:33:31 - Entering method: List com.maids.LibrarySystem.Controllers.BookController.getAllBooks()
+2024-11-01 12:33:31 - Exiting method: List com.maids.LibrarySystem.Controllers.BookController.getAllBooks()
+2024-11-01 12:33:35 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-01 12:33:35 - HikariPool-1 - Shutdown initiated...
+2024-11-01 12:33:35 - HikariPool-1 - Shutdown completed.
+2024-11-01 12:43:18 - Starting LibrarySystemApplication using Java 17.0.5 with PID 5916 (D:\Maids\LibraryProject\LibrarySystem\target\classes started by Mr_Salameh in D:\Maids\LibraryProject\LibrarySystem)
+2024-11-01 12:43:18 - No active profile set, falling back to 1 default profile: "default"
+2024-11-01 12:43:20 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-01 12:43:20 - Finished Spring Data repository scanning in 87 ms. Found 3 JPA repository interfaces.
+2024-11-01 12:43:22 - Tomcat initialized with port 8080 (http)
+2024-11-01 12:43:22 - Starting service [Tomcat]
+2024-11-01 12:43:22 - Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-11-01 12:43:22 - Initializing Spring embedded WebApplicationContext
+2024-11-01 12:43:22 - Root WebApplicationContext: initialization completed in 3159 ms
+2024-11-01 12:43:22 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-01 12:43:22 - HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-11-01 12:43:22 - HHH000026: Second-level cache disabled
+2024-11-01 12:43:23 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-01 12:43:23 - HikariPool-1 - Starting...
+2024-11-01 12:43:23 - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-11-01 12:43:23 - HikariPool-1 - Start completed.
+2024-11-01 12:43:23 - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-11-01 12:43:25 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-01 12:43:25 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-01 12:43:27 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-01 12:43:28 - Tomcat started on port 8080 (http) with context path '/'
+2024-11-01 12:43:28 - Started LibrarySystemApplication in 9.991 seconds (process running for 10.619)
+2024-11-01 12:44:02 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-01 12:44:02 - Initializing Servlet 'dispatcherServlet'
+2024-11-01 12:44:02 - Completed initialization in 1 ms
+2024-11-01 12:44:02 - Entering method: Book com.maids.LibrarySystem.Controllers.BookController.createBook(Book)
+2024-11-01 12:44:02 - Exiting method: Book com.maids.LibrarySystem.Controllers.BookController.createBook(Book)
+2024-11-01 12:44:16 - Entering method: Book com.maids.LibrarySystem.Controllers.BookController.createBook(Book)
+2024-11-01 12:44:16 - Exception in method: Book com.maids.LibrarySystem.Controllers.BookController.createBook(Book) with cause: Book with Same ISBN found !
+2024-11-01 12:44:16 - Exiting method: Book com.maids.LibrarySystem.Controllers.BookController.createBook(Book)
+2024-11-01 12:44:20 - Entering method: Book com.maids.LibrarySystem.Controllers.BookController.createBook(Book)
+2024-11-01 12:44:20 - Exiting method: Book com.maids.LibrarySystem.Controllers.BookController.createBook(Book)
+2024-11-01 12:44:33 - Entering method: ResponseEntity com.maids.LibrarySystem.Controllers.PatronController.createPatron(Patron)
+2024-11-01 12:44:33 - Exiting method: ResponseEntity com.maids.LibrarySystem.Controllers.PatronController.createPatron(Patron)
+2024-11-01 12:44:40 - Entering method: ResponseEntity com.maids.LibrarySystem.Controllers.PatronController.createPatron(Patron)
+2024-11-01 12:44:40 - SQL Error: 23505, SQLState: 23505
+2024-11-01 12:44:40 - Unique index or primary key violation: "PUBLIC.CONSTRAINT_INDEX_8 ON PUBLIC.PATRON(EMAIL NULLS FIRST) VALUES ( /* 1 */ 'patron1@gmail.com' )"; SQL statement:
+insert into patron (address,email,name,id) values (?,?,?,default) [23505-224]
+2024-11-01 12:44:40 - Exception in method: ResponseEntity com.maids.LibrarySystem.Controllers.PatronController.createPatron(Patron) with cause: could not execute statement [Unique index or primary key violation: "PUBLIC.CONSTRAINT_INDEX_8 ON PUBLIC.PATRON(EMAIL NULLS FIRST) VALUES ( /* 1 */ 'patron1@gmail.com' )"; SQL statement:
+insert into patron (address,email,name,id) values (?,?,?,default) [23505-224]] [insert into patron (address,email,name,id) values (?,?,?,default)]; SQL [insert into patron (address,email,name,id) values (?,?,?,default)]; constraint [PUBLIC.CONSTRAINT_INDEX_8]
+2024-11-01 12:44:40 - Exiting method: ResponseEntity com.maids.LibrarySystem.Controllers.PatronController.createPatron(Patron)
+2024-11-01 12:45:11 - Entering method: ResponseEntity com.maids.LibrarySystem.Controllers.PatronController.createPatron(Patron)
+2024-11-01 12:45:11 - Exiting method: ResponseEntity com.maids.LibrarySystem.Controllers.PatronController.createPatron(Patron)
+2024-11-01 12:51:04 - Entering method: ResponseEntity com.maids.LibrarySystem.Controllers.BorrowRecordController.borrowBook(Long,Long)
+2024-11-01 12:51:04 - Exception in method: ResponseEntity com.maids.LibrarySystem.Controllers.BorrowRecordController.borrowBook(Long,Long) with cause: Patron not found with id 8
+2024-11-01 12:51:04 - Exiting method: ResponseEntity com.maids.LibrarySystem.Controllers.BorrowRecordController.borrowBook(Long,Long)
+2024-11-01 12:51:09 - Entering method: ResponseEntity com.maids.LibrarySystem.Controllers.BorrowRecordController.borrowBook(Long,Long)
+2024-11-01 12:51:09 - Exiting method: ResponseEntity com.maids.LibrarySystem.Controllers.BorrowRecordController.borrowBook(Long,Long)
+2024-11-01 12:51:14 - Entering method: List com.maids.LibrarySystem.Controllers.BookController.getAllBooks()
+2024-11-01 12:51:14 - Exiting method: List com.maids.LibrarySystem.Controllers.BookController.getAllBooks()
+2024-11-01 12:52:01 - Entering method: Book com.maids.LibrarySystem.Controllers.BookController.createBook(Book)
+2024-11-01 12:52:01 - Exception in method: Book com.maids.LibrarySystem.Controllers.BookController.createBook(Book) with cause: Book with Same ISBN found !
+2024-11-01 12:52:01 - Exiting method: Book com.maids.LibrarySystem.Controllers.BookController.createBook(Book)
+2024-11-01 12:52:10 - Entering method: Book com.maids.LibrarySystem.Controllers.BookController.createBook(Book)
+2024-11-01 12:52:10 - Exiting method: Book com.maids.LibrarySystem.Controllers.BookController.createBook(Book)
+2024-11-01 12:52:43 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-01 12:52:43 - HikariPool-1 - Shutdown initiated...
+2024-11-01 12:52:43 - HikariPool-1 - Shutdown completed.
