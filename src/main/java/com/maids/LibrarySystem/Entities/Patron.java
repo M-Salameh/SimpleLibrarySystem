@@ -1,11 +1,13 @@
 package com.maids.LibrarySystem.Entities;
 
 
+
 import jakarta.persistence.*;
 import jakarta.validation.constraints.*;
-import java.time.LocalDate;
+import org.springframework.format.annotation.DateTimeFormat;
 
-
+import java.util.Date;
+import java.util.List;
 
 
 /**
@@ -34,6 +36,35 @@ public class Patron {
     @Email(message = "Email should be valid")
     @NotBlank(message = "Email is required")
     private String email;
+
+    @OneToMany(fetch = FetchType.LAZY , mappedBy = "patron")
+    private List<ApprovedDocuments> approvedDocuments;
+
+    public List<ApprovedDocuments> getApprovedDocuments() {
+        return approvedDocuments;
+    }
+
+    public void setApprovedDocuments(List<ApprovedDocuments> approvedDocuments) {
+        this.approvedDocuments = approvedDocuments;
+    }
+
+    @ElementCollection
+    @CollectionTable(joinColumns = @JoinColumn(name = "ENTITY_ID",
+            referencedColumnName = "ID",
+            foreignKey = @ForeignKey(
+                    ConstraintMode.NO_CONSTRAINT)))
+    private List<String> tests;
+
+    @DateTimeFormat(pattern = "YYYY-MM-DD HH:MM:SS")
+    private Date creationDate;
+
+    public Date getCreationDate() {
+        return creationDate;
+    }
+
+    public void setCreationDate(Date creationDate) {
+        this.creationDate = creationDate;
+    }
 
     /**
      * The address of the patron. Cannot be blank.
@@ -113,5 +144,13 @@ public class Patron {
      */
     public void setAddress(String address) {
         this.address = address;
+    }
+
+    public List<String> getTests() {
+        return tests;
+    }
+
+    public void setTests(List<String> tests) {
+        this.tests = tests;
     }
 }

@@ -8,9 +8,13 @@ import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.annotation.CacheEvict;
 import org.springframework.cache.annotation.Cacheable;
+import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Date;
 import java.util.List;
 
 
@@ -91,4 +95,27 @@ public class PatronController {
 
         return ResponseEntity.noContent().build();
     }
+
+    @GetMapping("/test/{test}/{num}")
+    public ResponseEntity<?> searchByTest(@PathVariable("test") String test , @PathVariable("num") Integer num) {
+        if (num % 2 == 1)
+            return ResponseEntity.ok(patronRepository.specialTest(test));
+        else return ResponseEntity.ok(patronRepository.specialTest2(test));
+    }
+
+    @PostMapping("/set-creation-date/{id}")
+    public ResponseEntity<?> setCreationDate(@PathVariable("id") Patron patron ,
+                                             @RequestBody @DateTimeFormat(pattern = "yyyy-mm-dd hh:mm:ss")Date date) {
+        patron.setCreationDate(date);
+        patronRepository.save(patron);
+        return ResponseEntity.ok(patron);
+    }
+
+    @GetMapping("/get-join-test/{id}/{s1}")
+    public ResponseEntity<?> getTEstJoin(@PathVariable("id") Long patron ,
+                                             @PathVariable("s1") String search) {
+        return ResponseEntity.ok(patronRepository.testSubQuery(patron,search));
+    }
+
+
 }

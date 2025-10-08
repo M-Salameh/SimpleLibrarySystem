@@ -8,7 +8,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 @SpringBootApplication
 @EnableTransactionManagement
-@EnableCaching
+//@EnableCaching
 //@EnableScheduling
 public class LibrarySystemApplication {
 
