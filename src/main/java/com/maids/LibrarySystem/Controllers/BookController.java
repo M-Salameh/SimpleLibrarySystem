@@ -2,6 +2,7 @@ package com.maids.LibrarySystem.Controllers;
 
 
 import com.maids.LibrarySystem.Entities.Book;
+import com.maids.LibrarySystem.IRepositries.IBookRepository;
 import com.maids.LibrarySystem.Services.BookService;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,6 +24,9 @@ public class BookController {
 
     @Autowired
     private BookService bookService;
+
+    @Autowired
+    private IBookRepository bookRepository;
 
     /**
      * Retrieve all books.
@@ -106,6 +110,11 @@ public class BookController {
         System.out.println("New Request in Deleting");
         bookService.deleteBookById(id);
         return ResponseEntity.noContent().build();
+    }
+
+    @GetMapping("/getByAuthorCity")
+    public ResponseEntity<?> getByAuthorCity() {
+        return ResponseEntity.ok(bookRepository.getByCityOfAuthorTest());
     }
 }
 

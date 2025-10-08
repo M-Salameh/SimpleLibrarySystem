@@ -1,11 +1,13 @@
 package com.maids.LibrarySystem.Entities;
 
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.*;
 import lombok.Data;
 
 import java.time.LocalDate;
+import java.util.Date;
 
 /**
  * Entity representing a Book in the Library System.
@@ -39,17 +41,31 @@ public class Book {
     @NotBlank(message = "Author is required")
     private String author;
 
+    @ManyToOne(fetch = FetchType.LAZY)
+    private BookAuthor bookAuthor;
+
+    public BookAuthor getBookAuthor() {
+        return bookAuthor;
+    }
+
+    @JsonIgnore
+    public void setBookAuthor(BookAuthor bookAuthor) {
+        this.bookAuthor = bookAuthor;
+    }
+
     /**
      * The date the book was published. Must be in the past.
      */
     @Past(message = "Publish date must be in the Past") // not future no !
-    private LocalDate dateOfPublish;
+    private LocalDate dateOfPublish = LocalDate.of(2001,1,1);
 
     /**
      * The rent price per day for the book. Must be non-negative.
      */
     @Min(value = 0, message = "Rent price must be non-negative")
-    private double rentPricePerDay;
+    private double rentPricePerDay = 1.1;
+
+
 
     /**
      * Gets the unique identifier for the book.

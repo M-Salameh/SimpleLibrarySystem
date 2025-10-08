@@ -2,7 +2,10 @@ package com.maids.LibrarySystem.IRepositries;
 
 import com.maids.LibrarySystem.Entities.Book;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
+
+import java.util.List;
 
 
 /**
@@ -18,4 +21,7 @@ public interface IBookRepository extends JpaRepository<Book, Long> {
      * @return The book with the specified ISBN.
      */
     public Book findByIsbn(String isbn);
+
+    @Query("SELECT b from Book b where b.bookAuthor.city is not null ")
+    List<Book> getByCityOfAuthorTest();
 }
